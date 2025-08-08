@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HỆ THỐNG ĐIỆN THÂN XE TOYOTA CAMRY 2006</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid" style="background-color: #b9cfd7;">
+            <div class="row pt-2">
+                <div class="col-2">
+                    <img src="./img/logo-iuh.png" alt="Logo" style="width: 80%;">
+                </div>
+                <div class="col-8 pt-3">
+                    <h3
+                        style="text-align: center; font-family: 'Times New Roman', Times, serif; font-weight: bold; letter-spacing: 2px; color: #262261; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">
+                        TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP THÀNH PHỐ HỒ CHÍ MINH</h3>
+                    <h3
+                        style="text-align: center; font-family: 'Times New Roman', Times, serif; font-weight: bold; letter-spacing: 2px; color: #262261; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">
+                        KHOA CÔNG NGHỆ ĐỘNG LỰC</h3>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Trang chủ</a></li>
+                <li><a href="./lydo_chon_detai.html">Lý do chọn đề tài</a></li>
+                <li><a href="thanh_vien.html">Thành viên</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <div class="banner">
+        <div class="banner-text">
+            <h1>HỆ THỐNG ĐIỆN THÂN XE TOYOTA CAMRY 2006</h1>
+        </div>
+
+        <div class="slider" id="slider">
+            <img src="./img/banner1.jpg" class="active" />
+            <img src="./img/banner2.jpg" />
+            <img src="./img/banner3.jpg" />
+        </div>
+    </div>
+
+    <script>
+        const images = document.querySelectorAll('#slider img');
+        let current = 0;
+
+        setInterval(() => {
+            images[current].classList.remove('active');
+            current = (current + 1) % images.length;
+            images[current].classList.add('active');
+        }, 3000);
+    </script>
+
+
+    <!-- Section -->
+    <section class="features-section">
+        <div class="feature-box" onclick="openPopup('popup1')">
+            <img src="./img/he_thong_chieu_sang.jpg" alt="Icon 1" />
+            <h3>HỆ THỐNG CHIẾU SÁNG</h3>
+        </div>
+        <div class="feature-box" onclick="openPopup('popup2')">
+            <img src="./img/he_thong_tin_hieu.jpg" alt="Icon 2" />
+            <h3>HỆ THỐNG TÍN HIỆU</h3>
+        </div>
+        <div class="feature-box" onclick="openPopup('popup3')">
+            <img src="./img/he_thong_gat_mua.jpg" alt="Icon 3" />
+            <h3>HỆ THỐNG PHUN NƯỚC GẠT MƯA</h3>
+        </div>
+    </section>
+
+    <!-- Popup Modals -->
+    <div class="popup" id="popup1">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
+            <img src="./img/he_thong_chieu_sang.jpg" alt="Large Image 1" />
+            <h2>HỆ THỐNG CHIẾU SÁNG</h2>
+            <p>Hệ thống chiếu sáng trên xe Toyota được thiết kế với công nghệ hiện đại, đảm bảo hiệu suất chiếu sáng tối
+                ưu và an toàn
+                tối đa cho người lái trong mọi điều kiện giao thông. Tùy theo từng dòng xe, Toyota trang bị các loại đèn
+                tiên tiến như
+                đèn LED, Bi-LED, hoặc đèn pha tự động thích ứng (Adaptive High Beam System – AHS). Những công nghệ này
+                không chỉ giúp
+                tăng khả năng quan sát vào ban đêm hoặc khi thời tiết xấu, mà còn giảm thiểu chói mắt cho các phương
+                tiện đối diện, góp
+                phần nâng cao an toàn giao thông. Ngoài ra, hệ thống đèn định vị ban ngày (DRL), đèn xi-nhan, đèn hậu và
+                đèn sương mù
+                cũng được tích hợp hài hòa, vừa tăng tính thẩm mỹ cho xe, vừa đảm bảo khả năng nhận diện tốt hơn khi
+                tham gia giao
+                thông.</p>
+        </div>
+    </div>
+
+    <div class="popup" id="popup2">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup2')">&times;</span>
+            <img src="./img/he_thong_tin_hieu.jpg" alt="Large Image 2" />
+            <h2>HỆ THỐNG TÍN HIỆU</h2>
+            <p>Hệ thống tín hiệu trên Toyota Camry 2006 là một phần quan trọng trong hệ thống điện, đảm nhiệm vai trò
+                truyền đạt các ý
+                định điều khiển của người lái và cảnh báo cho các phương tiện xung quanh. Xe được trang bị đầy đủ các
+                tín hiệu cơ bản
+                bao gồm: đèn xi-nhan (báo rẽ), đèn cảnh báo nguy hiểm (hazard), đèn phanh, đèn báo lùi, và hệ thống đèn
+                pha – cốt.
+
+                Các đèn tín hiệu này được điều khiển bằng các công tắc cơ khí gắn trên vô-lăng, bảng taplo hoặc gần cần
+                số. Hệ thống sử
+                dụng rơ-le và cầu chì để bảo vệ mạch điện, đảm bảo tín hiệu hoạt động ổn định và an toàn. Đèn xi-nhan và
+                hazard hoạt
+                động thông qua bộ chớp (flasher relay), tạo nhịp chớp nháy đều đặn để dễ nhận biết. Đèn phanh được kích
+                hoạt thông qua
+                công tắc chân phanh, trong khi đèn báo lùi hoạt động khi xe được đưa vào số lùi.</p>
+        </div>
+    </div>
+
+    <div class="popup" id="popup3">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup3')">&times;</span>
+            <img src="./img/he_thong_gat_mua.jpg" alt="Large Image 3" />
+            <h2>HỆ THỐNG PHUN NƯỚC GẠT MƯA</h2>
+            <p>Hệ thống phun nước gạt mưa trên xe Toyota Camry là một bộ phận quan trọng trong hệ thống hỗ trợ tầm nhìn
+                của người lái,
+                đặc biệt trong điều kiện thời tiết xấu như mưa hoặc bụi bẩn bám trên kính chắn gió. Hệ thống này bao gồm
+                các vòi phun
+                nước, bơm rửa kính và cần gạt mưa, hoạt động phối hợp nhằm làm sạch bề mặt kính một cách hiệu quả. Khi
+                người lái kích
+                hoạt cần gạt nước, máy bơm sẽ đưa nước từ bình chứa lên các vòi phun, phun trực tiếp lên kính chắn gió,
+                sau đó các lưỡi
+                gạt sẽ hoạt động để lau sạch nước và bụi bẩn, giúp cải thiện rõ rệt tầm nhìn và đảm bảo an toàn khi lái
+                xe. Trên Toyota
+                Camry, hệ thống này thường được thiết kế tự động và tối ưu về hiệu suất, mang lại sự tiện nghi và an
+                toàn tối đa cho
+                người sử dụng.</p>
+        </div>
+    </div>
+
+    <script>
+        function openPopup(id) {
+            document.getElementById(id).style.display = "flex";
+        }
+        function closePopup(id) {
+            document.getElementById(id).style.display = "none";
+
+        }
+        document.querySelectorAll(".popup").forEach(popup => {
+            popup.addEventListener("click", function (e) {
+                const popupContent = popup.querySelector(".popup-content");
+                if (!popupContent.contains(e.target)) {
+                    popup.style.display = "none"; // Đóng popup hiện tại
+                }
+            });
+        });
+    </script>
+
+    <footer class="container-fluid">
+        <div class="row" style="background-color: #b9cfd7; border-radius: 0px;">
+            <p style="color: #262261; margin: auto; padding: 6px 0px 6px 0px;"> © 2024 HỆ THỐNG ĐIỆN THÂN XE TOYOTA
+                CAMRY </p>
+        </div>
+    </footer>
+</body>
+
+</html>
